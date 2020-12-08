@@ -26,15 +26,16 @@ git config --global user.email f@ff						на уровне пользователя(часто)
 git config --unset user.name		удалить имя						(в проекте)
 git config --remove-section user	удаление всей секции user				(в проекте)	
 cat .git/config			просмотр имя и mail пользователя.	
-git config (--global) --list	просмотр параметров конфигурации.	(на уровне пользователя)
+git config (--global) --list	просмотр параметров конфигурации.			(на уровне пользователя)
 
 		*ОСНОВЫ*
-git add				добавите файлов в индекс (chaged area) под версионный контроль.
+git status			проверка статуса.
+git add	.			добавите файлов в индекс (chaged area) под версионный контроль.
 git add anyFile			удаление файла из индекса(до команды удаляем файл из working directory).
 git rm (-r) -f anyFile		удалит файл из индекса и working directory одной командой.
 git rm -r --cached anyFile	удалит файл из индекса, но оставит файл в working directory.
 git mv oldName newName		переименовывать файл.
-git commit -m 'nameFale'	закоммитить с комментарием.
+git commit -m 'nameFale'	зафиксировать с комментарием.
 git show			просмотр коммита и его содержимого.
 git log				просмотр истории коммитов.
 git clone https://----t.git	копирование репозитория на любой другой комп.
